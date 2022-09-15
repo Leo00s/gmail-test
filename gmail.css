@@ -1,0 +1,433 @@
+/*
+01. Typography System
+- Font sizes (px)
+- Font weights
+- Line heights : Default : 1
+
+02. Colors (No need to fill these up immediately. Generate them as you go.)
+- Primary : 
+- Tints : 
+- Shades : 
+- Accents : 
+- Greys : 
+
+03. Images
+unsplash.com - for free images.
+uifaces - for free images of faces.
+
+04. Icons
+
+05. Shadows
+
+06. Border-radius
+
+07. Whitespace
+Spacing system (px)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+/* -------------------- */
+/* REUSEABLES */
+/* -------------------- */
+ion-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mar-left-2 {
+  margin-left: 2rem;
+}
+
+.main-body {
+  display: flex;
+  margin-top: 64px;
+}
+
+body {
+  font-size: 1.5rem;
+  background-color: rgb(9, 9, 9);
+}
+
+.text-white {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+.header {
+  background-color: rgb(9, 9, 9);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* overflow: hidden; */
+  z-index: 100;
+}
+
+.header-logo {
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.header-text {
+  margin-left: 1rem;
+}
+
+.searchbar {
+  padding: 1rem;
+  width: 50%;
+  margin-left: 9rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(89, 89, 89);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.header-icon {
+  /* display: flex;
+  justify-content: center; */
+  /* background-color: aquamarine; */
+  display: flex;
+  /* align-content: center; */
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.topbar-icon {
+  padding: 1rem;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  display: flex;
+  align-content: center;
+}
+
+.topbar-icon:link,
+.topbar-icon:visited {
+  text-decoration: none;
+}
+
+.topbar-icon:hover,
+.topbar-icon:active {
+  background-color: rgb(69, 69, 69);
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  /* transition: 0.3s; */
+}
+
+/* -------------------- */
+/* SIDEBAR */
+/* -------------------- */
+.sidebar {
+  background-color: rgb(9, 9, 9);
+
+  width: 25rem;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+}
+
+button {
+  width: 15rem;
+  height: 5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.sidebar-tabs:link,
+.sidebar-tabs:visited {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 90%;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7rem 3rem;
+
+  /* background-color: brown; */
+}
+
+.sidebar-tabs:hover,
+.sidebar-tabs:active {
+  background-color: rgb(69, 69, 69);
+  outline: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.sidebar-label-text {
+  margin: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-label-icon {
+  margin-left: 13rem;
+
+  padding: 0.5rem;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.sidebar-label-icon:link,
+.sidebar-label-icon:visited {
+  text-decoration: none;
+}
+.sidebar-label-icon:hover,
+.sidebar-label-icon:active {
+  background-color: rgb(69, 69, 69);
+  border-radius: 50%;
+}
+
+/* -------------------- */
+/* CONTENT */
+/* -------------------- */
+.content {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-right: 6rem;
+  margin-left: 25rem;
+}
+
+/* -------------------- */
+/* CONTENT BAR */
+/* -------------------- */
+.content-bar {
+  display: flex;
+
+  color: rgb(169, 169, 169);
+  background-color: rgb(49, 49, 49);
+  padding: 0.5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.content-bar-icon:link,
+.content-bar-icon:visited {
+  color: rgb(169, 169, 169);
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+}
+.content-bar-icon:hover,
+.content-bar-icon:active {
+  background-color: rgb(69, 69, 69);
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  /* transition: 0.3s; */
+}
+
+.content-bar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.content-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+/* -------------------- */
+/* CONTENT TAB */
+/* -------------------- */
+.content-tabs {
+  background-color: rgb(49, 49, 49);
+}
+
+.content-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  max-width: 70rem;
+  background-color: coral;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content-tab-link:link,
+.content-tab-link:visited {
+  text-decoration: none;
+  background-color: rgb(49, 49, 49);
+  color: rgb(169, 169, 169);
+  padding: 1.8rem 1rem 1.8rem;
+  display: flex;
+}
+
+.content-tab-link:hover,
+.content-tab-link:active {
+  background-color: rgb(69, 69, 69);
+  color: #fff;
+}
+
+/* -------------------- */
+/* CONTENT BODY */
+/* -------------------- */
+
+.email-icon {
+  padding: 1rem;
+}
+
+.email-tabs {
+  background-color: rgb(49, 49, 49);
+}
+/* Style the tab */
+.tab {
+  background-color: rgb(49, 49, 49);
+  color: rgb(169, 169, 169);
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 70rem;
+}
+
+.tab div {
+  /* float: left; */
+  cursor: pointer;
+  padding: 1.8rem 10rem 1.8rem 1rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.tab div:hover,
+.tab div.active {
+  background-color: rgb(89, 89, 89);
+  color: #fff;
+}
+
+.tabcontent {
+  display: flex;
+  color: #fff;
+  background-color: rgb(169, 169, 169);
+  width: 100%;
+}
+
+.tab-email {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+
+  cursor: pointer;
+  background-color: rgb(29, 29, 29);
+  color: rgb(169, 169, 169);
+}
+
+.tab-email:hover,
+.tab-email:active {
+  box-shadow: 0 0 5px 1px rgb(169, 169, 169);
+  color: #fff;
+  z-index: 100;
+}
+
+.tab-email-title {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.tab-email-text {
+  margin-left: 8rem;
+  margin-right: 2rem;
+  width: 300px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.tab-email-time {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+/* -------------------- */
+/* SIDEBAR-R */
+/* -------------------- */
+.sidebar-r {
+  background-color: rgb(9, 9, 9);
+  color: #fff;
+  display: grid;
+  width: 6rem;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  position: fixed;
+  /* width: 100%; */
+  height: 100vh;
+  right: 0;
+  /* overflow: hidden; */
+  /* z-index: 100; */
+  top: 64px;
+}
+
+.sidebar-r-icon {
+  padding: 1rem;
+  color: #fff;
+}
+
+.sidebar-r-icon:link,
+.sidebar-r-icon:visited {
+  text-decoration: none;
+}
+
+.sidebar-r-icon:hover,
+.sidebar-r-icon:active {
+  background-color: rgb(69, 69, 69);
+  border-radius: 50%;
+}
+
+/* -------------------- */
+/* SETTINGS */
+/* -------------------- */
+.settings-text {
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 5rem;
+}
